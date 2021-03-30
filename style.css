@@ -1,0 +1,111 @@
+.page-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: slategrey;
+}
+.page-back {
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    position: absolute;
+    background-image: url(img/dragon.jfif);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+} 
+
+html {
+  height: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+#dragons {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+}
+
+button {
+    z-index: 100;
+}
+
+.hlist {
+    display: flex;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    bottom: -75vh;
+}
+
+.hlist li {
+    list-style-type: none;
+    padding: 25px;
+}
+
+.dlist li {
+    padding: 15px;
+}
+
+.dlist input {
+    margin: 5px;
+}
+
+#bpminput{
+    padding: 5px;
+    margin-left: 25px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.drums {
+    margin-left: -68vh;
+    margin-top: 30vh;
+    text-align: center;
+}
+.dlist {
+    background-color: black;
+    opacity: 50%;
+    display: inline-block;
+    padding: 0px;
+}
+input[type=checkbox] {
+    zoom: 200%;
+}
+
+.loops {
+    float: right;
+    margin-right: 10vh;
+    margin-top: -65vh;
+}
+.loops li {
+    padding: 10px;
+}
+.samples {
+    float: left;
+    display: flex;
+    margin-top: -60vh;
+    margin-left: 4vh;
+}
+.elist {
+    display: flex;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+}
+.elist li {
+    padding-left: 25px;
+    margin-top: 0vh;
+}
+#autor {
+    float: right;
+    margin-right: 10vh;
+}

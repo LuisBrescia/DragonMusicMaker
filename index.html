@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- Idioma do site -->
+<html lang="pt-BR">
+<head>
+    <!-- Conjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Para o Quirks Mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Para o site se adequar a diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nome do site-->
+    <title>MusicMaker</title>
+    <!-- Incluindo arquivos CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Plano de fundo -->
+    
+    <div class="page-container">
+    <div class="page-back">
+    </div>
+        <!-- Botões na tela -->
+        <div class="creatures">
+            <ul class="hlist">
+                <li id="dragon">
+                    <a class="btn btn-outline-light btn-lg" href="#" role="button">Fix</a>
+                </li>
+                <li id="play">
+                    <a id="playerbutton" class="btn btn-outline-danger btn-lg" href="#" role="button"><i id="playerstate" class="fa fa-stop"></i></a>
+                </li>
+                <li>
+                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Como Funciona</a>
+                </li>
+                <li id="bpm">
+                    <a id="bpmbutton" class="btn btn-outline-warning btn-lg" href="#" role="button">BPM</a>
+                    <input id="bpminput" type="number" class="hidden" value="128" min="90" max="800">
+                </li>
+                <li id="autor">
+                    <a id="bpmbutton" class="btn btn-outline-light btn-lg" href="#" role="button">LuísBrescia</a>
+                </li>
+        </div>
+
+        <!-- Bateria -->
+        <div class="drums">
+            <ul class="dlist">
+            <div class="kick">
+                <li>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                    <input type="checkbox" id="beat" checked>
+                </li>
+            </div>
+            <div class="snap">
+                <li>
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                </li>
+            </div>
+            <div class="hat">
+                <li>
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                </li>
+            </div>
+            <div class="crash">
+                <li>
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                    <input type="checkbox" id="beat">
+                </li>
+            </div>
+            </ul>
+        </div>
+
+        <!-- Loops -->
+        <div class="loops">
+            <ul>
+                <li id="arploop">
+                    <a id="arpbutton" class="btn btn-light btn-lg" href="#" role="button">Arp</a>
+                </li>
+                <li id="melodyloop">
+                    <a id="melodybutton" class="btn btn-light btn-lg" href="#" role="button">Melody</a>
+                </li>
+                <li id="leadloop">
+                    <a id="leadbutton" class="btn btn-light btn-lg" href="#" role="button">Lead</a>
+                </li>
+                <li id="guitarloop">
+                    <a id="guitarbutton" class="btn btn-light btn-lg" href="#" role="button">Guitar</a>
+                </li>
+                <li id="fingeringloop">
+                    <a id="fingeringbutton" class="btn btn-light btn-lg" href="#" role="button">Fingering</a>
+                </li>
+                <li id="cinematicloop">
+                    <a id="cinematicbutton" class="btn btn-light btn-lg" href="#" role="button">Shaker</a>
+                </li>
+                <li id="drumloop">
+                    <a id="drumbutton" class="btn btn-light btn-lg" href="#" role="button">DrumLoop</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Samples -->
+        <div class="samples">
+            <ul class="hlist">
+                <li id="perc">
+                    <a id="growlbutton" class="btn btn-secondary btn-lg" href="#" role="button">Growl</a>
+                </li>
+                <li id="bass">
+                    <a id="bassbutton" class="btn btn-secondary btn-lg" href="#" role="button">Bass</a>
+                </li>
+                <li id="whomp">
+                    <a id="whompbutton" class="btn btn-secondary btn-lg" href="#" role="button">Whomp</a>
+                </li>
+                <li id="pluck">
+                    <a id="pluckbutton" class="btn btn-secondary btn-lg" href="#" role="button">Pluck</a>
+                </li>
+                <li id="game">
+                    <a id="gamebutton" class="btn btn-secondary btn-lg" href="#" role="button">GameSound</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Effects -->
+        <div class="effects">
+            <ul class="elist">
+                <li id="sweep">
+                    <a id="sweepbutton" class="btn btn-dark btn-lg" href="#" role="button">Sweep</a>
+                </li>
+                <li id="exhaust">
+                    <a id="exhaustbutton" class="btn btn-dark btn-lg" href="#" role="button">Exhaust</a>
+                </li>
+                <li id="fill">
+                    <a id="fillbutton" class="btn btn-dark btn-lg" href="#" role="button">Fill</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        
+
+    <!-- Incluindo arquivos JS -->
+    <script src="import/jquery.js"></script>
+    <script src="import/popper.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+        <script src="import/tone/build/Tone.js"></script>
+    <script src="back_end.js"></script>
+</body>
+</html>
